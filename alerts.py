@@ -57,7 +57,7 @@ def create_rule_filter() -> Callable[[str], bool]:
         return lambda _: True
 
     specific_rules = {
-        'PT': lambda msg: 'PTsecurity' in msg,
+        'PT': lambda msg: 'PT'+'security' in msg,
         'ET': lambda msg: msg.startswith('ET'),
     }
 
