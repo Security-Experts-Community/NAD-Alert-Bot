@@ -137,7 +137,7 @@ case $PYTHON_TYPE in
         PYTHON_PATH="$CUSTOM_PYTHON_PATH"
         ;;
     nad)
-        PYTHON_PATH="/opt/ptsecurity/ptnad-python/bin/python3"
+        PYTHON_PATH="/opt/pt""security/ptnad-python/bin/python3"
         ;;
     *)
         echo "Error: Invalid Python type specified"
