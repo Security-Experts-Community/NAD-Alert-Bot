@@ -1,0 +1,14 @@
+telegram:
+  bot_token: ""
+  chat_id: ""
+
+webhook:
+  secret_token: "" # Set this parameter to random string. It will be used in the webhook URL after /webhook/ (e.g https://localhost:8000/webhook/1337)
+
+alert:
+  timezone: "UTC" # Timezone in format of "UTC", "Asia/Tokyo", "Europe/Moscow", etc.
+  priority_filter: [1] # 1: Red, 2: Yellow, 3: Blue, 4: Grey ([1, 2, 3, 4])
+  rules_filter: ["PT"] # Could be ["PT", "ET", "Custom"]. If [] specified, alert from any rules will be sent.
+  ignore_sids: [] # Ignore alerts from these SIDs, e.g [1000001, 1000002]
+  ignore_msg: [] # Ignore alerts with keywords, e.g ["TEST", "ATTACK"]
+  show_nad_source: false # If set to true, NAD hostname will be shown in the alert message
