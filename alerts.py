@@ -36,6 +36,8 @@ class AlertInfo(BaseModel):
     to_server: Optional[bool] = None
     payload: Optional[str] = None
 
+    model_config = ConfigDict(extra='ignore')
+
 class Alert(BaseModel):
     type: Optional[str] = "alert"
     flow_id: Optional[str] = None
